@@ -1,0 +1,31 @@
+body {
+	background-image: url("https://80d2853cc4def76b377d-54344bc01a8b066c84096a8e7a3499ac.ssl.cf1.rackcdn.com/large/704034.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+.intro {
+	background-color: white;
+	opacity: 0.6;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.card {
+	margin: 5%;
+}
+
+.facts {
+	background-color: white;
+	opacity: 0.6;
+}
+
+footer p {
+	color: white;
+	
+
+}
