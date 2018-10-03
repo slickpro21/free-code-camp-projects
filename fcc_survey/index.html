@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Rachelle's Food Truck Survey</title>
+</head>
+<body>
+    <main>
+        <h1 id="title"> ~ Rachelle's Food Truck Survey ~ </h1>
+        <div id="form-body">
+            <p id="description">Let Rachelle know how she can improve your experience!</p>
+            <form id="survey-form" method="GET" action="#">
+                <div class="leftSide">
+                    <div class="labels">
+                        <label for="name" id="name-label">* Name:</label>
+                    </div>
+                </div>
+                    <div class="rightSide">
+                        <input  type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                <div class="leftSide">
+                    <div class="labels">
+                        <label for="email" id="email-label">* Email:</label>
+                    </div>
+                </div>
+                    <div class="rightSide">
+                        <input type="email" id="email" placeholder="Enter your Email" required>
+                    </div>
+                <div class="leftSide">
+                    <div class="labels">
+                        <label for="age" id="number-label">* Age:</label>
+                    </div>
+                </div>
+                    <div class="rightSide">
+                        <input type="number" id="number" min="1" max="100" placeholder="Age">
+                    </div>
+                <div class="leftSide">
+                    <div class="labels">
+                        <label for="location">Which location do you visit most?</label>
+                    </div>
+                </div>
+                    <div class="rightSide">
+                        <select name="location" id="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option value="ephrata">Ephrata</option>
+                            <option value="lanc">Lancaster</option>
+                            <option value="reading">Reading</option>
+                            <option value="Preferno">Prefer not to say</option>
+                        </select>
+                    </div>
+                <div class="leftSide">
+                    <div class="labels">
+                        <label for="recommend">How likely would you recommend Rachelle's Food Truck to a friend?</label>
+                    </div>
+                </div>
+                    <div class="rightSide">
+                        <ul>
+                            <li class="radio"><label>Maybe<input type="radio" name="radio-button" class="recommend" value="maybe"></label></li>
+                            <li class="radio"><label>Definitely<input type="radio" name="radio-button" class="recommend" value="definitely"></label></li>
+                            <li class="radio"><label>Not Sure<input type="radio" name="radio-button" class="recommend" value="Not sure"></label></li>
+                        </ul>
+                    </div>
+                <div class="leftSide">
+                    <div class="labels">
+                        <label for="foods">Foods you'd like to taste more of<br>(Check all that apply):</label>
+                    </div>
+                </div>
+                    <div class="rightSide">
+                        <ul>
+                            <li class="checkbox"><label>Mexican<input type="checkbox" class="foods" value="mexican"></label></li>
+                            <li class="checkbox"><label>German<input type="checkbox" class="foods" value="german"></label></li>
+                            <li class="checkbox"><label>Dutch<input type="checkbox" class="foods" value="dutch"></label></li>
+                            <li class="checkbox"><label>Italian<input type="checkbox" class="foods" value="italian"></label></li>
+                            <li class="checkbox"><label>French<input type="checkbox" class="foods" value="French"></label></li>
+                        </ul>
+                    </div>
+                <div class="leftSide">
+                    <div class="labels">
+                            <label for="comments">Any comments or suggestion?</label>
+                    </div>
+                </div>
+                    <div class="rightSide">
+                        <textarea class="comments" rows="5" cols="40" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                    <br>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
