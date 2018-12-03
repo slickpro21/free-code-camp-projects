@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,15 +8,15 @@
     <title>BBQ Bros. Landing Page</title>
 </head>
 <body>
-    <header class="header">
+    <header id="header">
         <div class="logo">
             <img class="header-img" src="images/logo.jpg">
         </div>
     <nav id="nav-bar">
         <ul>
-            <li class="nav-link"><a href="#catering">Catering</a></li>
-            <li class="nav-link"><a href="#menu">Menu</a></li>
-            <li class="nav-link"><a href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#hero">Menu</a></li>
+            <li><a class="nav-link" href="#catering">Catering</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -29,21 +29,53 @@
                 <div class="hero-cap">
                     <h2>"Home Cooked from Scratch"</h2>
                         <h4>BBQ Catering for every Budget and any Lifestyle</h4>
-                </div>
+                <div>
             </div>
-            
         </section>
 
         <section id="catering">
             <div class="title">
                 <h2>Catering</h2>
             </div>
-            <div id="video">
-                    <video width="640" height="360" autoplay muted>
+
+            <div>
+                    <video id="video" width="640" height="360" autoplay muted>
                         <source src="images/barbecue_feast.mp4" type="video/mp4">
                     Your browser doesn't support this video tag.
                     </video>
                 </div>
+
+            <article>
+                <div id="cater-info">
+                    <p>We do catering for all types of occasions, from business luncheons to weddings!</p>
+                </div>
+            </article>
+
+        <section id="contact">
+            <div class="title">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div id="form-body">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <div class="left-side">
+                            <div class="labels">
+                                <label for="email" id="email-label">* Email:</label>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                        </div>
+            
+            <br>
+            <div id="submit-wrap">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+            </div>
+                    </form>
+        </section>
+
+            
         </section>
     </main>
     
