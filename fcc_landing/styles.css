@@ -1,137 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol,
-ul {
-    list-style: none;
-}
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Added css reset to prevent default browser styling*/
-
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 
 
@@ -143,14 +9,18 @@ html, body {
     overflow-x: hidden;   
 }
 
-.header {
-    width: 100%;
-    min-height: 70px;
-    display: flex;
+header {
     position: fixed;
+    top: 0%;
+    min-height: 70px;
+    flex: 0 0 auto;
+    display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #ffffff;
+    padding: 0px 20px;
+    
+    
 }
 
 @media (max-width: 650px){
@@ -199,7 +69,7 @@ ul {
     }
 }
 
-.nav-link a {
+.nav-link {
     padding: 14px 16px;
     text-decoration: none;
     color: rgb(66,28,17);
@@ -220,6 +90,7 @@ main {
     justify-content: center;
     align-content: center;
     padding: 20px;
+    margin-top: 85px;
 }
 
 #hero-intro {
@@ -243,7 +114,7 @@ main {
 }
 
 #hero-intro:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 
 #catering {
@@ -266,5 +137,56 @@ main {
     display: block;
     margin: 0 auto;
     padding: 25px;
+    text-align: center;
+}
+
+#cater-info {
+    text-align: center;
+}
+
+#form-body {
+    background-color: #FFFCF9;;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    padding-top: 20px;
+}
+
+.left-side {
+    display: inline-block;
+    color: rgb(66,28,17);
+    vertical-align: top;
+    width: 40%;
+    text-align: right;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+.right-side {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    text-align: left;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+#submit {
+    background-color: rgb(66,28,17);
+    color: #ffffff;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 15px;
+    height: 40px;
+    width: 80px;
+    border: 0px solid;
+
+}
+
+#submit-wrap {
+    display: block;
     text-align: center;
 }
